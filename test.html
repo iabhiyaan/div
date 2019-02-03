@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background: linear-gradient(#E86717, #E58D36);
+            height:700px;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .header,
+        .wrapper,
+        .footer {
+            background: #7D787B;
+            border: 4px solid #363235;
+            margin: 20px;
+        }
+
+        .nav {
+            border: 4px solid black;
+            margin: 40px;
+        }
+
+        .row {
+            margin-bottom: 5px;
+        }
+
+        .sub-content,
+        .sub-content2 {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .col {
+            border: 4px solid black;
+            margin: 5px;
+        }
+
+        .col--1 {
+            display: inline-block;
+            height: 300px;
+            padding: 20px;
+        }
+
+        .col--2 {
+            height: 300px;
+            float: right;
+            padding: 20px;
+        }
+
+        .clearfix {
+            clear: right;
+        }
+
+        .footer {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> &lt;div class="container"&gt; </h1>
+        <div class="header">
+            <h1> &lt;div class="header"&gt; </h1>
+            <div class="nav">
+                <h1> &lt;div class="nav"&gt; </h1>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <h1> &lt;div class="wrapper"&gt; </h1>
+            <div class="row">
+                <div class="col col--1">
+                    <div class="content">
+                        <h1> &lt;div class="content"&gt; </h1>
+                    </div>
+                    <div class="sub-content">
+                        <h1> &lt;div class="sub-content"&gt; </h1>
+                    </div>
+                    <div class="sub-content2">
+                        <h1> &lt;div class="sub-content2"&gt; </h1>
+                    </div>
+                </div>
+
+                <div class="col col--2">
+                    <div class="sidebar">
+                        <h1> &lt;div class="sidebar"&gt; </h1>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+                <h1> &lt;div class="footer"&gt; </h1>
+        </div>
+    </div>  
+</body>
+
+</html>
